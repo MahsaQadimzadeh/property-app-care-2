@@ -1,0 +1,34 @@
+<<<<<<< HEAD
+node_modules
+.env
+dist
+build
+.firebase
+.vercel
+
+=======
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+>>>>>>> 46f768874dfd96d2fdd5606647dd9f481a70fb4b
