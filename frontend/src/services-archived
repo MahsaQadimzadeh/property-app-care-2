@@ -1,0 +1,23 @@
+// frontend/src/services/projectService.ts
+
+export const addProject = async (projectData: any) => {
+  try {
+    const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/projects`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(projectData),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to add project: ${response.statusText}`);
+    }
+
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    console.error('Error adding project:', error);
+    throw error;
+  }
+};
